@@ -1,0 +1,7 @@
+package com.kh.practice.charCheck.controller;
+
+public class CharCheckException extends Exception {
+
+	
+	
+}

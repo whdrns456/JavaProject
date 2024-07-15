@@ -1,0 +1,30 @@
+package com.kh.practice.token.controller;
+
+public class TokenController {
+	
+	public TokenController(){}
+
+	public String afterToken(String str) {
+		return"";
+	}
+	
+	public String firstCap(String input) {
+		return"";
+	}
+
+	public int findChar(String input, char one) {
+		return 1;
+	}
+
+	public String nextToken() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	}
+	
+	
+	
+	
+}

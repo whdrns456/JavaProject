@@ -1,0 +1,15 @@
+package com.kh.practice.chap02_abstractNInterface;
+
+	
+	// Phone과 Camera 
+ 
+public interface CellPhone extends Phone, Camera  {
+		
+	// 추상메소드 4개 : 1개 Phone - 2(makeCall / takeCall)
+	//                         , Camera = 1 (picture)
+	//                           CellPhone - 1 (charge)
+	
+	
+	 public abstract String charge();
+	// 
+}

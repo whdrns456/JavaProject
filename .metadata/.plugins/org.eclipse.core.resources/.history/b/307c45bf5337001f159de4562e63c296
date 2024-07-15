@@ -1,0 +1,22 @@
+package com.kh.practice;
+
+public class StringTest {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+
+	}
+	
+	
+	public static void test1() {
+		String str1 = "apple"; // 상수풀
+		String str2 = "apple";
+		// str1 == str2 : 문자열 값을 비교하는게 아니라, 주소값을 비교
+		System.out.println(str1 == str2);
+	}
+
+}

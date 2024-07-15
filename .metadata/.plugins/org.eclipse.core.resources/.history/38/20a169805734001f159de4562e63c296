@@ -1,0 +1,5 @@
+package com.kh.practice.chap02_abstractNInterface;
+
+public interface Camera {
+
+}

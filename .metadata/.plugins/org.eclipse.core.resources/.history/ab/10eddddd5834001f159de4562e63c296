@@ -1,0 +1,27 @@
+package com.kh.practice.chap02_abstractNInterface;
+
+public class Run {
+
+	public static void main(String[] args) {
+	
+		
+		PhoneController pc = new PhoneController();
+
+		
+		
+		
+		System.out.println(pc.method());
+		
+		
+				
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,51 @@
+package com.kh.practice;
+
+import java.io.IOException;
+import java.security.PublicKey;
+import java.util.Scanner;
+
+public class ValueLengthException extends Exception {
+
+	private String msg;
+
+	public ValueLengthException(){
+		
+	}
+	
+	public ValueLengthException(String msg){
+		this.msg = msg;
+	}
+	
+	
+	public static void  ValueLengthException01() throws ValueLengthException {
+		
+	
+		System.out.println("-------start------");
+		Scanner sc = new Scanner(System.in);	
+		
+		System.out.print("4이상 정수 입력");
+		String value = sc.next();
+		
+		
+		if(value.length() <= 3) {
+			throw new ValueLengthException("안됩니다");
+		}
+		System.out.println(value);
+		System.out.println("-------end------");
+	}
+	
+	public static void main(String[] args) throws ValueLengthException {
+		
+		try {
+			
+			ValueLengthException01();	
+		}catch (ValueLengthException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		 
+}
+}

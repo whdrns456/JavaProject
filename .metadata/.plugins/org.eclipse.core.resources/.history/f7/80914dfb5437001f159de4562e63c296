@@ -1,0 +1,40 @@
+package com.kh.practice;
+
+public class StringTest {
+
+	public static void main(String[] args) {
+		
+		
+		test1();
+		
+		
+
+	}
+	
+	
+	public static void test1() {
+		String str1 = "apple"; // 상수풀
+		String str2 = "apple";
+		
+		// str1 == str2 : 문자열 값을 비교하는게 아니라, 주소값을 비교
+		System.out.println(str1 == str2);
+		// 문자열 값 자체를 대입하면 상수풀이라는 공간에 값이 저장 되어
+		// 같은 곳을 가리키게 됨
+		
+		System.out.println("[2]" + (str1 == "apple"));
+		// => str1이 가리키는 주소와 "apple" 값 자체가 저장된 주소를 비교
+		// true다 str1, "apple" 모두 상수풀의 같은 곳에 저장되엉 있어 true
+		
+		String str3 = new String("apple");
+		String str4 = new String("apple");
+		
+		System.out.println("[3]" + (str3 == str4));
+		// 값 자체가 아니라 객체로써 false
+		// 문자열 객체를 생성해서 값을 대입하면 메모리에 새로운 영역을 할당하므로
+		// 각각 할당된 영역을 가리키게 됨 (주소값이 다름)
+		
+		System.out.println("[4]" + (str3 == "apple"));
+		
+	}
+
+}
